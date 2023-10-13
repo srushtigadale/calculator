@@ -2,14 +2,14 @@
 // Using switch case
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <math.h>
 // Driver code
 int main()
 {
 	char ch;
 	double a, b;
 	while (1) {
-		printf("Enter an operator (+, -, *, /), "
+		printf("Enter an operator (+, -, *, /,e), "
 			"if want to exit press x: ");
 		scanf(" %c", &ch);
 
@@ -42,6 +42,7 @@ int main()
 		case '/':
 			printf("%.1lf / %.1lf = %.1lf\n", a, b, a / b);
 			break;
+		case'e':  printf("%f %f \n" , pow(a,e),pow(b,e));  
 
 		// If operator doesn't match any case constant
 		default:
